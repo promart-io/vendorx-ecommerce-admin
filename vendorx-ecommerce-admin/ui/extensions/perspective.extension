@@ -1,0 +1,5 @@
+{
+	"description": "Home perspective",
+	"extensionPoint": "launchpad-vendorx-ecommerce-perspective",
+	"module": "vendorx-ecommerce-admin/ui/extensions/perspective.js"
+}

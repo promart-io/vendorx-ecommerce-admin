@@ -1,0 +1,5 @@
+{
+	"description": "Products view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Products-view",
+	"module": "vendorx-ecommerce-admin/ui/Products/views/master/Products/extensions/view.js"
+}

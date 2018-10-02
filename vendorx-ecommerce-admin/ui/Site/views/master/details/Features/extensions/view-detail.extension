@@ -1,0 +1,5 @@
+{
+	"description": "Features view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Site-Index-view",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/master/details/Features/extensions/view.js"
+}

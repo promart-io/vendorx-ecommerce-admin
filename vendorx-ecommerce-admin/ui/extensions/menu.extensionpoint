@@ -1,0 +1,4 @@
+{
+	"description": "Extension Point for the vendorx-ecommerce-admin Menu Providers",
+	"name": "launchpad-vendorx-ecommerce-admin-menu"
+}

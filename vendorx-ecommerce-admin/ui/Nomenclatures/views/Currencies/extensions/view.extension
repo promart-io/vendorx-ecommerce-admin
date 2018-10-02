@@ -1,0 +1,5 @@
+{
+	"description": "Currencies view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Nomenclatures-view",
+	"module": "vendorx-ecommerce-admin/ui/Nomenclatures/views/Currencies/extensions/view.js"
+}

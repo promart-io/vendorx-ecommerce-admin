@@ -1,0 +1,5 @@
+{
+	"description": "Market_Promotions view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Site-Marketplace-view",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/master/details/Market_Promotions/extensions/view.js"
+}

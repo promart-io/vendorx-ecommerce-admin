@@ -1,0 +1,5 @@
+{
+	"description": "Currencies menu",
+	"extensionPoint": "shell-vendorx-ecommerce-admin-menu",
+	"module": "vendorx-ecommerce-admin/views/Currencies/menu/item.js"
+}

@@ -1,0 +1,5 @@
+{
+	"description": "UoM view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Nomenclatures-view",
+	"module": "vendorx-ecommerce-admin/ui/Nomenclatures/views/UoM/extensions/view.js"
+}

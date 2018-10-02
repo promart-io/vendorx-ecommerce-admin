@@ -1,0 +1,5 @@
+{
+	"description": "Categories view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Nomenclatures-view",
+	"module": "vendorx-ecommerce-admin/ui/Nomenclatures/views/Categories/extensions/view.js"
+}

@@ -1,0 +1,5 @@
+{
+	"description": "Slides view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Site-Index-view",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/master/details/Slides/extensions/view.js"
+}

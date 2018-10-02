@@ -1,0 +1,5 @@
+{
+	"description": "Nomenclatures tiles",
+	"extensionPoint": "launchpad-vendorx-ecommerce-tiles",
+	"module": "vendorx-ecommerce-admin/ui/Nomenclatures/views/Categories/extensions/tile/tile.js"
+}
