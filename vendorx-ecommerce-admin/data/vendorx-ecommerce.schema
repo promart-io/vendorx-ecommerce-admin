@@ -209,6 +209,26 @@
                         "length": 200,
                         "nullable": true,
                         "name": "WELCOMEMESSAGE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "PROMOTIONSHEADING"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "PROMOTIONSPERLINE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "BRANDNAME"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "FOOTERLINE"
                     }]
             }, {
                 "name": "VENDORX_ECOMM_SITE_PROMOTIONS",
@@ -295,38 +315,6 @@
                         "length": 200,
                         "nullable": true,
                         "name": "CAPTION"
-                    }, {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "nullable": true,
-                        "name": "INDEXID"
-                    }]
-            }, {
-                "name": "VENDORX_ECOMM_SITE_HEADINGS",
-                "type": "TABLE",
-                "columns": [
-                    {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "primaryKey": true,
-                        "identity": true,
-                        "nullable": true,
-                        "name": "ID"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 200,
-                        "nullable": true,
-                        "name": "TITLE"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 2000,
-                        "nullable": true,
-                        "name": "DESCRIPTION"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 200,
-                        "nullable": true,
-                        "name": "LINK"
                     }, {
                         "type": "INTEGER",
                         "length": 0,

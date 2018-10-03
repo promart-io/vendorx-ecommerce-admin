@@ -12,6 +12,22 @@ var dao = daoApi.create({
 			'name': 'WelcomeMessage',
 			'column': 'WELCOMEMESSAGE',
 			'type': 'VARCHAR',
+		}, {
+			'name': 'PromotionsHeading',
+			'column': 'PROMOTIONSHEADING',
+			'type': 'VARCHAR',
+		}, {
+			'name': 'PromotionsPerLine',
+			'column': 'PROMOTIONSPERLINE',
+			'type': 'INTEGER',
+		}, {
+			'name': 'BrandName',
+			'column': 'BRANDNAME',
+			'type': 'VARCHAR',
+		}, {
+			'name': 'FooterLine',
+			'column': 'FOOTERLINE',
+			'type': 'VARCHAR',
 		}]
 });
 exports.list = function(settings) {

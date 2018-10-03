@@ -24,6 +24,10 @@
 					<th>#</th>
 					<th class="text-capitalize">Id</th>
 					<th class="text-capitalize">WelcomeMessage</th>
+					<th class="text-capitalize">PromotionsHeading</th>
+					<th class="text-capitalize">PromotionsPerLine</th>
+					<th class="text-capitalize">BrandName</th>
+					<th class="text-capitalize">FooterLine</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -32,6 +36,10 @@
 					<td>{{(dataPage - 1) * dataLimit + $index + 1}}</td>
 					<td>{{next.Id}}</td>
 					<td>{{next.WelcomeMessage}}</td>
+					<td>{{next.PromotionsHeading}}</td>
+					<td>{{next.PromotionsPerLine}}</td>
+					<td>{{next.BrandName}}</td>
+					<td>{{next.FooterLine}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
 						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
@@ -57,6 +65,22 @@
 						<div class="form-group">
 							<label>WelcomeMessage</label>
 							<input type="text" class="form-control" placeholder="Enter welcomemessage" ng-model="entity.WelcomeMessage">
+						</div>
+						<div class="form-group">
+							<label>PromotionsHeading</label>
+							<input type="text" class="form-control" placeholder="Enter promotionsheading" ng-model="entity.PromotionsHeading">
+						</div>
+						<div class="form-group">
+							<label>PromotionsPerLine</label>
+							<input type="number" class="form-control" placeholder="Enter promotionsperline" ng-model="entity.PromotionsPerLine">
+						</div>
+						<div class="form-group">
+							<label>BrandName</label>
+							<input type="text" class="form-control" placeholder="Enter brandname" ng-model="entity.BrandName">
+						</div>
+						<div class="form-group">
+							<label>FooterLine</label>
+							<input type="text" class="form-control" placeholder="Enter footerline" ng-model="entity.FooterLine">
 						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">

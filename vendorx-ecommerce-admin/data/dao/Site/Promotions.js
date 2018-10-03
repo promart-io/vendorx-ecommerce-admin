@@ -9,7 +9,7 @@ var dao = daoApi.create({
 			'type': 'INTEGER',
 			'id': true,
 		}, {
-			'name': 'Image700x450',
+			'name': 'Image',
 			'column': 'IMAGE',
 			'type': 'VARCHAR',
 		}, {
