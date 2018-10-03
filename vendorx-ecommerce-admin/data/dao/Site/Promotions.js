@@ -10,11 +10,11 @@ var dao = daoApi.create({
 			'id': true,
 		}, {
 			'name': 'Image700x450',
-			'column': 'IMAGE1',
+			'column': 'IMAGE',
 			'type': 'VARCHAR',
 		}, {
 			'name': 'Link',
-			'column': 'LINK1',
+			'column': 'LINK',
 			'type': 'VARCHAR',
 		}, {
 			'name': 'IndexId',

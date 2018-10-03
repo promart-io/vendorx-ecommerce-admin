@@ -225,12 +225,12 @@
                         "type": "VARCHAR",
                         "length": 200,
                         "nullable": true,
-                        "name": "IMAGE1"
+                        "name": "IMAGE"
                     }, {
                         "type": "VARCHAR",
                         "length": 200,
                         "nullable": true,
-                        "name": "LINK1"
+                        "name": "LINK"
                     }, {
                         "type": "INTEGER",
                         "length": 0,
@@ -238,7 +238,7 @@
                         "name": "INDEXID"
                     }]
             }, {
-                "name": "FEATURES",
+                "name": "VENDORX_ECOMM_SITE_FEATURES",
                 "type": "TABLE",
                 "columns": [
                     {
@@ -263,6 +263,11 @@
                         "length": 20,
                         "nullable": true,
                         "name": "IMAGE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "COLOR"
                     }, {
                         "type": "INTEGER",
                         "length": 0,

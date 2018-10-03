@@ -1092,17 +1092,17 @@
                         "localProperty": "Id"
                     },
                     {
-                        "entityName": "Features",
-                        "entityProperty": "IndexId",
-                        "localProperty": "Id"
-                    },
-                    {
                         "entityName": "Slides",
                         "entityProperty": "IndexId",
                         "localProperty": "Id"
                     },
                     {
                         "entityName": "Headings",
+                        "entityProperty": "IndexId",
+                        "localProperty": "Id"
+                    },
+                    {
+                        "entityName": "Features",
                         "entityProperty": "IndexId",
                         "localProperty": "Id"
                     }
@@ -1156,7 +1156,7 @@
                     },
                     {
                         "name": "Image700x450",
-                        "dataName": "IMAGE1",
+                        "dataName": "IMAGE",
                         "dataType": "VARCHAR",
                         "dataLength": 200,
                         "dataDefaultValue": "",
@@ -1185,7 +1185,7 @@
                     },
                     {
                         "name": "Link",
-                        "dataName": "LINK1",
+                        "dataName": "LINK",
                         "dataType": "VARCHAR",
                         "dataLength": 200,
                         "dataDefaultValue": "",
@@ -1245,10 +1245,10 @@
             },
             {
                 "name": "Features",
-                "dataName": "FEATURES",
-                "dataCount": "SELECT COUNT(*) FROM FEATURES",
+                "dataName": "VENDORX_ECOMM_SITE_FEATURES",
+                "dataCount": "SELECT COUNT(*) FROM VENDORX_ECOMM_SITE_FEATURES",
                 "dataQuery": "",
-                "type": "Entity",
+                "type": "DEPENDENT",
                 "title": "Features",
                 "tooltip": "Features",
                 "icon": "sitemap",
@@ -1368,6 +1368,35 @@
                         "widgetLength": "20",
                         "widgetLabel": "Image",
                         "widgetShortLabel": "Image",
+                        "widgetPattern": "",
+                        "widgetFormat": "",
+                        "widgetSection": "",
+                        "widgetService": "",
+                        "widgetIsMajor": "true",
+                        "widgetDropDownKey": "",
+                        "widgetDropDownValue": ""
+                    },
+                    {
+                        "name": "Color",
+                        "dataName": "COLOR",
+                        "dataType": "VARCHAR",
+                        "dataLength": "20",
+                        "dataDefaultValue": "",
+                        "dataPrimaryKey": "false",
+                        "dataAutoIncrement": "false",
+                        "dataNotNull": "false",
+                        "dataUnique": "false",
+                        "dataPrecision": null,
+                        "dataScale": null,
+                        "relationshipType": null,
+                        "relationshipCardinality": null,
+                        "relationshipName": "",
+                        "relationshipEntityName": "",
+                        "relationshipEntityPerspectiveName": "",
+                        "widgetType": "TEXTBOX",
+                        "widgetLength": "20",
+                        "widgetLabel": "Color",
+                        "widgetShortLabel": "Color",
                         "widgetPattern": "",
                         "widgetFormat": "",
                         "widgetSection": "",

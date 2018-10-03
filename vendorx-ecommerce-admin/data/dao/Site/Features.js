@@ -1,7 +1,7 @@
 var query = require('db/v3/query');
 var daoApi = require('db/v3/dao');
 var dao = daoApi.create({
-	'table': 'FEATURES',
+	'table': 'VENDORX_ECOMM_SITE_FEATURES',
 	'properties': [
 		{
 			'name': 'Id',
@@ -19,6 +19,10 @@ var dao = daoApi.create({
 		}, {
 			'name': 'Image',
 			'column': 'IMAGE',
+			'type': 'VARCHAR',
+		}, {
+			'name': 'Color',
+			'column': 'COLOR',
 			'type': 'VARCHAR',
 		}, {
 			'name': 'IndexId',
@@ -51,6 +55,6 @@ exports.count = function() {
 };
 
 exports.customDataCount = function() {
-	var resultSet = query.execute("SELECT COUNT(*) FROM FEATURES");
+	var resultSet = query.execute("SELECT COUNT(*) FROM VENDORX_ECOMM_SITE_FEATURES");
 	return resultSet !== null ? resultSet[0].COUNT : 0;
 };

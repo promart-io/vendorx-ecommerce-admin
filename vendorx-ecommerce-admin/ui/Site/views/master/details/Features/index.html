@@ -26,6 +26,7 @@
 					<th class="text-capitalize">Name</th>
 					<th class="text-capitalize">Description</th>
 					<th class="text-capitalize">Image</th>
+					<th class="text-capitalize">Color</th>
 					<th class="text-capitalize">IndexId</th>
 					<th></th>
 				</tr>
@@ -37,6 +38,7 @@
 					<td>{{next.Name}}</td>
 					<td>{{next.Description}}</td>
 					<td>{{next.Image}}</td>
+					<td>{{next.Color}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
 						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
@@ -70,6 +72,10 @@
 						<div class="form-group">
 							<label>Image</label>
 							<input type="text" class="form-control" placeholder="Enter image" ng-model="entity.Image">
+						</div>
+						<div class="form-group">
+							<label>Color</label>
+							<input type="text" class="form-control" placeholder="Enter color" ng-model="entity.Color">
 						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">
