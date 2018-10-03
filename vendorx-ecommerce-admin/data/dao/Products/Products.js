@@ -68,6 +68,10 @@ var dao = daoApi.create({
 			'name': 'Image500x300',
 			'column': 'IMAGE500X300',
 			'type': 'VARCHAR',
+		}, {
+			'name': 'PriceRRP',
+			'column': 'PRICERRP',
+			'type': 'DOUBLE',
 		}]
 });
 exports.list = function(settings) {

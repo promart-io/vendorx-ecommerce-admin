@@ -28,6 +28,18 @@ var dao = daoApi.create({
 			'name': 'FooterLine',
 			'column': 'FOOTERLINE',
 			'type': 'VARCHAR',
+		}, {
+			'name': 'ClearanceHeading',
+			'column': 'CLEARANCEHEADING',
+			'type': 'VARCHAR',
+		}, {
+			'name': 'ClearancePerLine',
+			'column': 'CLEARANCEPERLINE',
+			'type': 'INTEGER',
+		}, {
+			'name': 'SpecialRequestText',
+			'column': 'SPECIALREQUESTTEXT',
+			'type': 'VARCHAR',
 		}]
 });
 exports.list = function(settings) {

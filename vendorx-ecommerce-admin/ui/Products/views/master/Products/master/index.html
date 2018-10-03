@@ -37,6 +37,7 @@
 					<th class="text-capitalize">Image320x150</th>
 					<th class="text-capitalize">Image750x500</th>
 					<th class="text-capitalize">Image500x300</th>
+					<th class="text-capitalize">PriceRRP</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -58,6 +59,7 @@
 					<td>{{next.Image320x150}}</td>
 					<td>{{next.Image750x500}}</td>
 					<td>{{next.Image500x300}}</td>
+					<td>{{next.PriceRRP}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
 						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
@@ -139,6 +141,10 @@
 						<div class="form-group">
 							<label>Image500x300</label>
 							<input type="text" class="form-control" placeholder="Enter image500x300" ng-model="entity.Image500x300">
+						</div>
+						<div class="form-group">
+							<label>PriceRRP</label>
+							<input type="number" class="form-control" placeholder="Enter pricerrp" ng-model="entity.PriceRRP">
 						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">
