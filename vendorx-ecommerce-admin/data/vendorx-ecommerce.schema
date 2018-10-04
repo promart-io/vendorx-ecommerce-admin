@@ -76,17 +76,7 @@
                         "type": "VARCHAR",
                         "length": 200,
                         "nullable": true,
-                        "name": "IMAGE320X150"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 200,
-                        "nullable": true,
-                        "name": "IMAGE750X500"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 200,
-                        "nullable": true,
-                        "name": "IMAGE500X300"
+                        "name": "IMAGE"
                     }, {
                         "type": "DOUBLE",
                         "length": 20,
@@ -342,56 +332,7 @@
                         "name": "INDEXID"
                     }]
             }, {
-                "name": "VENDORX_ECOMM_SITE_MARKET_SLIDES",
-                "type": "TABLE",
-                "columns": [
-                    {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "primaryKey": true,
-                        "identity": true,
-                        "nullable": true,
-                        "name": "ID"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 200,
-                        "nullable": true,
-                        "name": "IMAGE"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 200,
-                        "nullable": true,
-                        "name": "CAPTION"
-                    }, {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "nullable": true,
-                        "name": "MARKETID"
-                    }]
-            }, {
-                "name": "VENDORX_ECOMM_SITE_MARKET_PROMOTIONS",
-                "type": "TABLE",
-                "columns": [
-                    {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "primaryKey": true,
-                        "identity": true,
-                        "nullable": true,
-                        "name": "ID"
-                    }, {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "nullable": true,
-                        "name": "MARKETID"
-                    }, {
-                        "type": "INTEGER",
-                        "length": 0,
-                        "nullable": true,
-                        "name": "PRODUCTID"
-                    }]
-            }, {
-                "name": "VENDORX_ECOMM_PRODUCT_REVIEWS",
+                "name": "VENDORX_ECOMM_REVIEWS",
                 "type": "TABLE",
                 "columns": [
                     {

@@ -1,5 +1,0 @@
-{
-	"description": "Market_Slides view",
-	"extensionPoint": "launchpad-vendorx-ecommerce-Site-Marketplace-view",
-	"module": "vendorx-ecommerce-admin/ui/Site/views/master/details/Market_Slides/extensions/view.js"
-}

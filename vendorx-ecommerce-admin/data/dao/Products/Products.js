@@ -57,16 +57,8 @@ var dao = daoApi.create({
 			'column': 'SUBHEADING',
 			'type': 'VARCHAR',
 		}, {
-			'name': 'Image320x150',
-			'column': 'IMAGE320X150',
-			'type': 'VARCHAR',
-		}, {
-			'name': 'Image750x500',
-			'column': 'IMAGE750X500',
-			'type': 'VARCHAR',
-		}, {
-			'name': 'Image500x300',
-			'column': 'IMAGE500X300',
+			'name': 'Image',
+			'column': 'IMAGE',
 			'type': 'VARCHAR',
 		}, {
 			'name': 'PriceRRP',

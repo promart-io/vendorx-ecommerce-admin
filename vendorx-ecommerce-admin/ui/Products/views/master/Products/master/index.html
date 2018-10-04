@@ -34,9 +34,7 @@
 					<th class="text-capitalize">Currency</th>
 					<th class="text-capitalize">Heading</th>
 					<th class="text-capitalize">Subheading</th>
-					<th class="text-capitalize">Image320x150</th>
-					<th class="text-capitalize">Image750x500</th>
-					<th class="text-capitalize">Image500x300</th>
+					<th class="text-capitalize">Image</th>
 					<th class="text-capitalize">PriceRRP</th>
 					<th></th>
 				</tr>
@@ -56,9 +54,7 @@
 					<td>{{currencyidOptionValue(next.CurrencyId)}}</td>
 					<td>{{next.Heading}}</td>
 					<td>{{next.Subheading}}</td>
-					<td>{{next.Image320x150}}</td>
-					<td>{{next.Image750x500}}</td>
-					<td>{{next.Image500x300}}</td>
+					<td>{{next.Image}}</td>
 					<td>{{next.PriceRRP}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
@@ -131,16 +127,8 @@
 							<input type="text" class="form-control" placeholder="Enter subheading" ng-model="entity.Subheading">
 						</div>
 						<div class="form-group">
-							<label>Image320x150</label>
-							<input type="text" class="form-control" placeholder="Enter image320x150" ng-model="entity.Image320x150">
-						</div>
-						<div class="form-group">
-							<label>Image750x500</label>
-							<input type="text" class="form-control" placeholder="Enter image750x500" ng-model="entity.Image750x500">
-						</div>
-						<div class="form-group">
-							<label>Image500x300</label>
-							<input type="text" class="form-control" placeholder="Enter image500x300" ng-model="entity.Image500x300">
+							<label>Image</label>
+							<input type="text" class="form-control" placeholder="Enter image" ng-model="entity.Image">
 						</div>
 						<div class="form-group">
 							<label>PriceRRP</label>
