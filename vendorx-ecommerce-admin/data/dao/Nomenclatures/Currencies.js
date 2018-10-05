@@ -6,12 +6,8 @@ var dao = daoApi.create({
 		{
 			'name': 'Id',
 			'column': 'ID',
-			'type': 'INTEGER',
-			'id': true,
-		}, {
-			'name': 'Code',
-			'column': 'CODE',
 			'type': 'VARCHAR',
+			'id': true,
 		}, {
 			'name': 'Name',
 			'column': 'NAME',

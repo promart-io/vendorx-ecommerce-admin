@@ -23,7 +23,6 @@
 				<tr>
 					<th>#</th>
 					<th class="text-capitalize">Id</th>
-					<th class="text-capitalize">Code</th>
 					<th class="text-capitalize">Name</th>
 					<th></th>
 				</tr>
@@ -32,7 +31,6 @@
 				<tr ng-repeat="next in data">
 					<td>{{(dataPage - 1) * dataLimit + $index + 1}}</td>
 					<td>{{next.Id}}</td>
-					<td>{{next.Code}}</td>
 					<td>{{next.Name}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
@@ -55,10 +53,6 @@
 				</div>
 				<div class="modal-body">
 					<form ng-hide="actionType === 'delete'">
-						<div class="form-group">
-							<label>Code</label>
-							<input type="text" class="form-control" placeholder="Enter code" ng-model="entity.Code">
-						</div>
 						<div class="form-group">
 							<label>Name</label>
 							<input type="text" class="form-control" placeholder="Enter name" ng-model="entity.Name">

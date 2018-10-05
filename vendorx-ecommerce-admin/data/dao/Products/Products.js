@@ -35,7 +35,7 @@ var dao = daoApi.create({
 		}, {
 			'name': 'UoMId',
 			'column': 'UOMID',
-			'type': 'INTEGER',
+			'type': 'VARCHAR',
 		}, {
 			'name': 'CategoryId',
 			'column': 'CATEGORYID',
@@ -47,7 +47,7 @@ var dao = daoApi.create({
 		}, {
 			'name': 'CurrencyId',
 			'column': 'CURRENCYID',
-			'type': 'INTEGER',
+			'type': 'VARCHAR',
 		}, {
 			'name': 'Heading',
 			'column': 'HEADING',

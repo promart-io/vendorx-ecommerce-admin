@@ -43,7 +43,7 @@
                         "nullable": true,
                         "name": "COLOR"
                     }, {
-                        "type": "INTEGER",
+                        "type": "VARCHAR",
                         "length": 0,
                         "nullable": true,
                         "name": "UOMID"
@@ -58,7 +58,7 @@
                         "nullable": true,
                         "name": "PRICE"
                     }, {
-                        "type": "INTEGER",
+                        "type": "VARCHAR",
                         "length": 0,
                         "nullable": true,
                         "name": "CURRENCYID"
@@ -132,17 +132,12 @@
                 "type": "TABLE",
                 "columns": [
                     {
-                        "type": "INTEGER",
-                        "length": 0,
+                        "type": "VARCHAR",
+                        "length": 20,
                         "primaryKey": true,
                         "identity": true,
                         "nullable": true,
                         "name": "ID"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 20,
-                        "nullable": true,
-                        "name": "CODE"
                     }, {
                         "type": "VARCHAR",
                         "length": 200,
@@ -154,17 +149,12 @@
                 "type": "TABLE",
                 "columns": [
                     {
-                        "type": "INTEGER",
-                        "length": 0,
+                        "type": "VARCHAR",
+                        "length": 20,
                         "primaryKey": true,
                         "identity": true,
                         "nullable": true,
                         "name": "ID"
-                    }, {
-                        "type": "VARCHAR",
-                        "length": 20,
-                        "nullable": true,
-                        "name": "CODE"
                     }, {
                         "type": "VARCHAR",
                         "length": 20,
