@@ -1,0 +1,5 @@
+{
+	"description": "Panels view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Site-Services-view",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/master/details/Panels/extensions/view.js"
+}

@@ -1,25 +1,29 @@
 var query = require('db/v3/query');
 var daoApi = require('db/v3/dao');
 var dao = daoApi.create({
-	'table': 'VENDORX_ECOMM_SITE_MARKETPLACE',
+	'table': 'VENDORX_ECOMM_SITE_SERVICE',
 	'properties': [
 		{
 			'name': 'Id',
-			'column': 'ENTITY6ID',
+			'column': 'ID',
 			'type': 'INTEGER',
 			'id': true,
 		}, {
-			'name': 'Name',
-			'column': 'NAME',
+			'name': 'Icon',
+			'column': 'ICON',
 			'type': 'VARCHAR',
 		}, {
-			'name': 'Heading',
-			'column': 'HEADING',
+			'name': 'Title',
+			'column': 'TITLE',
 			'type': 'VARCHAR',
 		}, {
-			'name': 'Subheading',
-			'column': 'SUBHEADING',
+			'name': 'Description',
+			'column': 'DESCRIPTION',
 			'type': 'VARCHAR',
+		}, {
+			'name': 'ServicesId',
+			'column': 'SERVICESID',
+			'type': 'INTEGER',
 		}]
 });
 exports.list = function(settings) {
@@ -47,6 +51,6 @@ exports.count = function() {
 };
 
 exports.customDataCount = function() {
-	var resultSet = query.execute("SELECT COUNT(*) FROM VENDORX_ECOMM_SITE_MARKETPLACE");
+	var resultSet = query.execute("SELECT COUNT(*) FROM VENDORX_ECOMM_SITE_SERVICE");
 	return resultSet !== null ? resultSet[0].COUNT : 0;
 };

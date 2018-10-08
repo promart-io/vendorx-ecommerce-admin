@@ -14,7 +14,7 @@
 
 <body ng-controller="PageController">
 	<div class="page-header container">
-		<h1>Manage Marketplace</h1>
+		<h1>Manage Service</h1>
 	</div>
 	<div class="container">
 		<button type="button" ng-click="openNewDialog()" class="btn btn-lg btn-primary pull-right">New</button>
@@ -23,19 +23,20 @@
 				<tr>
 					<th>#</th>
 					<th class="text-capitalize">Id</th>
-					<th class="text-capitalize">Name</th>
-					<th class="text-capitalize">Heading</th>
-					<th class="text-capitalize">Subheading</th>
+					<th class="text-capitalize">Icon</th>
+					<th class="text-capitalize">Title</th>
+					<th class="text-capitalize">Description</th>
+					<th class="text-capitalize">ServicesId</th>
 					<th></th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="next in data" ng-class="{'bg-info':next && next.Id == selectedEntity.Id}" style="cursor: pointer;" ng-click="selectEntity(next)">
+				<tr ng-repeat="next in data">
 					<td>{{(dataPage - 1) * dataLimit + $index + 1}}</td>
 					<td>{{next.Id}}</td>
-					<td>{{next.Name}}</td>
-					<td>{{next.Heading}}</td>
-					<td>{{next.Subheading}}</td>
+					<td>{{next.Icon}}</td>
+					<td>{{next.Title}}</td>
+					<td>{{next.Description}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
 						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
@@ -59,20 +60,20 @@
 				<div class="modal-body">
 					<form ng-hide="actionType === 'delete'">
 						<div class="form-group">
-							<label>Name</label>
-							<input type="text" class="form-control" placeholder="Enter name" ng-model="entity.Name">
+							<label>Icon</label>
+							<input type="text" class="form-control" placeholder="Enter icon" ng-model="entity.Icon">
 						</div>
 						<div class="form-group">
-							<label>Heading</label>
-							<input type="text" class="form-control" placeholder="Enter heading" ng-model="entity.Heading">
+							<label>Title</label>
+							<input type="text" class="form-control" placeholder="Enter title" ng-model="entity.Title">
 						</div>
 						<div class="form-group">
-							<label>Subheading</label>
-							<input type="text" class="form-control" placeholder="Enter subheading" ng-model="entity.Subheading">
+							<label>Description</label>
+							<input type="text" class="form-control" placeholder="Enter description" ng-model="entity.Description">
 						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">
-						You are going to delete <b>Marketplace</b> with <b>Id = {{entity.Id}}</b>.
+						You are going to delete <b>Service</b> with <b>Id = {{entity.Id}}</b>.
 					</div>
 				</div>
 				<div class="modal-footer">

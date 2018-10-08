@@ -1,0 +1,5 @@
+{
+	"description": "Site tiles",
+	"extensionPoint": "launchpad-vendorx-ecommerce-tiles",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/Menu/extensions/tile/tile.js"
+}

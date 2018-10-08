@@ -174,9 +174,19 @@
                         "name": "ENTITY6ID"
                     }, {
                         "type": "VARCHAR",
-                        "length": 20,
+                        "length": 200,
                         "nullable": true,
                         "name": "NAME"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "HEADING"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "SUBHEADING"
                     }]
             }, {
                 "name": "VENDORX_ECOMM_SITE_INDEX",
@@ -379,6 +389,149 @@
                         "length": 0,
                         "nullable": true,
                         "name": "INDEXID"
+                    }]
+            }, {
+                "name": "VENDORX_ECOMM_SITE_SERVICES",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "HEADING"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "SUBHEADING"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "IMAGE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "PANELSHEADING"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "LISTHEADING"
+                    }]
+            }, {
+                "name": "VENDORX_ECOMM_SITE_PANELS",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "ICON"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "TITLE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "DESCRIPTION"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "nullable": true,
+                        "name": "SERVICESID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "COLOR"
+                    }]
+            }, {
+                "name": "VENDORX_ECOMM_SITE_SERVICE",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "ICON"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "TITLE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 200,
+                        "nullable": true,
+                        "name": "DESCRIPTION"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "nullable": true,
+                        "name": "SERVICESID"
+                    }]
+            }, {
+                "name": "VENDORX_ECOMM_SITE_MENU",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "MARKETPLACE"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "SERVICES"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "CONTACT"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "ABOUT"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "HOME"
                     }]
             }]
     }

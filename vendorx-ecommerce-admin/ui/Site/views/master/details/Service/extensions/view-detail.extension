@@ -1,0 +1,5 @@
+{
+	"description": "Service view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Site-Services-view",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/master/details/Service/extensions/view.js"
+}
