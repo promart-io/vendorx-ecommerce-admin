@@ -362,6 +362,11 @@
                         "length": 0,
                         "nullable": true,
                         "name": "PRODUCTID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 2000,
+                        "nullable": true,
+                        "name": "COMMENT"
                     }]
             }, {
                 "name": "VENDORX_ECOMM_SITE_CLEARANCE",

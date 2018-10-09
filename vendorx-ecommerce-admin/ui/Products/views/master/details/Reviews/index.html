@@ -27,6 +27,7 @@
 					<th class="text-capitalize">CreatedAt</th>
 					<th class="text-capitalize">Rating</th>
 					<th class="text-capitalize">ProductId</th>
+					<th class="text-capitalize">Comment</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -35,8 +36,9 @@
 					<td>{{(dataPage - 1) * dataLimit + $index + 1}}</td>
 					<td>{{next.Id}}</td>
 					<td>{{next.UserName}}</td>
-					<td>{{next.CreatedAt}}</td>
+					<td>{{next.CreatedAt | date:dateFormat}}</td>
 					<td>{{next.Rating}}</td>
+					<td>{{next.Comment}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
 						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
@@ -65,11 +67,32 @@
 						</div>
 						<div class="form-group">
 							<label>CreatedAt</label>
-							<input type="text" class="form-control" placeholder="Enter createdat" ng-model="entity.CreatedAt">
+							<p class="input-group">
+								<input type="text" 
+									ng-model="entity.CreatedAt"
+									class="form-control"
+									uib-datepicker-popup=""
+									is-open="createdatCalendarStatus.opened" 
+									datepicker-options="dateOptions"
+									close-text="Close"
+								>
+								<span class="input-group-btn">
+									<button type="button"
+										class="btn btn-default"
+										ng-click="createdatOpenCalendar($event)"
+									>
+										<i class="fa fa-calendar"></i>
+									</button>
+								</span>
+		           			</p>
 						</div>
 						<div class="form-group">
 							<label>Rating</label>
 							<input type="number" class="form-control" placeholder="Enter rating" ng-model="entity.Rating">
+						</div>
+						<div class="form-group">
+							<label>Comment</label>
+							<input type="text" class="form-control" placeholder="Enter comment" ng-model="entity.Comment">
 						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">

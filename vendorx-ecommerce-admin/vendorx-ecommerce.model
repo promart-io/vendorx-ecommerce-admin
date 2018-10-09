@@ -673,7 +673,7 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -1592,7 +1592,7 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -1727,7 +1727,7 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -1825,7 +1825,7 @@
                         "relationshipName": "",
                         "relationshipEntityName": "",
                         "relationshipEntityPerspectiveName": "",
-                        "widgetType": "DATETIME-LOCAL",
+                        "widgetType": "DATE",
                         "widgetLength": "20",
                         "widgetLabel": "CreatedAt",
                         "widgetShortLabel": "CreatedAt",
@@ -1891,9 +1891,38 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
+                    },
+                    {
+                        "name": "Comment",
+                        "dataName": "COMMENT",
+                        "dataType": "VARCHAR",
+                        "dataLength": "2000",
+                        "dataDefaultValue": "",
+                        "dataPrimaryKey": "false",
+                        "dataAutoIncrement": "false",
+                        "dataNotNull": "false",
+                        "dataUnique": "false",
+                        "dataPrecision": null,
+                        "dataScale": null,
+                        "relationshipType": null,
+                        "relationshipCardinality": null,
+                        "relationshipName": "",
+                        "relationshipEntityName": "",
+                        "relationshipEntityPerspectiveName": "",
+                        "widgetType": "TEXTBOX",
+                        "widgetLength": "20",
+                        "widgetLabel": "Comment",
+                        "widgetShortLabel": "Comment",
+                        "widgetPattern": "",
+                        "widgetFormat": "",
+                        "widgetSection": "",
+                        "widgetService": "",
+                        "widgetIsMajor": "true",
+                        "widgetDropDownKey": "",
+                        "widgetDropDownValue": ""
                     }
                 ]
             },
@@ -2026,7 +2055,7 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -2395,7 +2424,7 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     },
@@ -2538,7 +2567,7 @@
                         "name": "Description",
                         "dataName": "DESCRIPTION",
                         "dataType": "VARCHAR",
-                        "dataLength": "200",
+                        "dataLength": 200,
                         "dataDefaultValue": "",
                         "dataPrimaryKey": "false",
                         "dataAutoIncrement": "false",
@@ -2588,7 +2617,7 @@
                         "widgetFormat": "",
                         "widgetSection": "",
                         "widgetService": "",
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }

@@ -140,6 +140,14 @@ angular.module('page')
 		});
 	};
 
+	$scope.createdatOpenCalendar = function($event) {
+		$scope.createdatCalendarStatus.opened = true;
+	};
+
+	$scope.createdatCalendarStatus = {
+		opened: false
+	};
+
 
 	$messageHub.onEntityRefresh($scope.loadPage($scope.dataPage));
 

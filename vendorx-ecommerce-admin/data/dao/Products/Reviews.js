@@ -24,6 +24,10 @@ var dao = daoApi.create({
 			'name': 'ProductId',
 			'column': 'PRODUCTID',
 			'type': 'INTEGER',
+		}, {
+			'name': 'Comment',
+			'column': 'COMMENT',
+			'type': 'VARCHAR',
 		}]
 });
 exports.list = function(settings) {
