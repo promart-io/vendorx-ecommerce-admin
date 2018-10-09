@@ -1,0 +1,5 @@
+{
+	"description": "About menu",
+	"extensionPoint": "shell-vendorx-ecommerce-admin-menu",
+	"module": "vendorx-ecommerce-admin/views/About/menu/item.js"
+}

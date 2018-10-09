@@ -1,0 +1,5 @@
+{
+	"description": "Contact view",
+	"extensionPoint": "launchpad-vendorx-ecommerce-Site-view",
+	"module": "vendorx-ecommerce-admin/ui/Site/views/Contact/extensions/view.js"
+}
